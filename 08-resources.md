@@ -1,9 +1,8 @@
 ---
 layout: resources
-title: Resources
-description: Some resources
+title: Project
 keywords: resources
 nav-class: resources
-permalink: /resources/
+permalink: /project/
 
 ---

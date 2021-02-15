@@ -16,7 +16,7 @@ ul {
 	li {
 		display: inline-block;
 		margin-left: 1.5rem;
-		a, a:visited {color: lighten($color-main, 20%);}
+		a, a:visited {color: $color-main;}
 		a { transition: color 0.2s ease;}
 		a:hover {color: $theme1;}
 	}
