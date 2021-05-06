@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="@regmtait">
   <link rel=icon href="/theme-assets/favicon.svg" sizes="any" type="image/svg+xml">
-  <title>Toasty Jekyll</title>
+  <title>Gina Jihyeon Lee</title>
   <meta name="description" content="A White label website">
   <meta name="keywords" content="jekyll, reg tait">
 
@@ -41,7 +41,7 @@
 
 
   <link rel="canonical" href="http://localhost:4000/">
-  <link rel="alternate" type="application/rss+xml" title="Toasty Jekyll" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Gina Jihyeon Lee" href="http://localhost:4000/feed.xml">
 
 </head>
 
@@ -51,13 +51,12 @@
 
 <div class="wrapper">
 	<nav class="site-nav">
-		<a class="logo" href="/" title="Toasty Jekyll home page">
-		<img class="nav-logo" src="/theme-assets/logo.svg" title="Toasty Jekyll logo" /></a>
+		<a class="logo" href="/" title="Gina Jihyeon Lee home page">
+		<img class="nav-logo" src="/theme-assets/logo.svg" title="Gina Jihyeon Lee logo" /></a>
 		<ul>
-  			<li data-wenk="Some news" data-wenk-pos="bottom" class="news"><a title="News" class="page-link" href="/news/">News</a></li>
-  			<li data-wenk="Successful case studies" data-wenk-pos="bottom" class="case-studies"><a title="Case studies" class="page-link" href="/case-studies/">Case studies</a></li>
-  			<li data-wenk="Some resources" data-wenk-pos="bottom" class="resources"><a title="Resources" class="page-link" href="/resources/">Resources</a></li>
-  			<li data-wenk="Contact details" data-wenk-pos="bottom" class="contact"><a title="Contact" class="page-link" href="/contact/">Contact</a></li>
+  			<li  class="news"><a title="About" class="page-link" href="/">About</a></li>
+  			<li  class="case-studies"><a title="Resume" class="page-link" href="/CV_JIHYEONLEE.pdf">Resume</a></li>
+  			<!-- <li  class="resources"><a title="Project" class="page-link" href="/project/">Project</a></li> -->
 		</ul>
 	</nav>
 </div>
@@ -66,73 +65,106 @@
 
 <div class="page-content">
  <div class="wrapper">
-<h1>Toasty Jekyll</h1>
-<p>A super simple white label website built with Jekyll and using Dan Eden's Toast grid layout.
-</p>
+<h1>Gina Jihyeon Lee</h1>
+<p >Passionate AI researcher and sensible person<br>jihyeonlee at kaist dot ac dot kr</p>
+<div>
+    <img src="./theme-assets/profile.png" width="180px"
+            alt="profile image">
 </div>
+<div>
+<p>Welcome to my website. Here, I mainly share my research interests including CV and projects. Enjoy to read more about me and please feel free to contact further!</p>
+<p>Codes are available in <a href="https://github.com/GinaJihyeonLee">Github</a> and additional technology writings are recorded on <a href="/news/">Tistory</a>. If you want to know more about my personality and life style, please visit to my <a href="https://www.notion.so/ginalee/Personal-Page-c18aca076bf64354a7642b5c4a7d9418">Notion</a> page, <a href="/news/">Twitter</a>, and <a href="https://www.instagram.com/ginabeloved/">Instagram</a>.</p>
+</div>
+</div>    
 
 <section class="cf">
 <div class="wrapper">
+<h2>About Me</h2>
+<div>I am a research scientist at NAVER AI Lab, working on the challenges of deploying machine learning models in the real world. I am interested in training robust, probabilistic, and weakly-supervised models in pragmatic settings.
+I received my PhD in computer vision and machine learning at Max-Planck Institute for Informatics in 2018, under the supervision of Bernt Schiele and Mario Fritz, with a focus on the privacy and security implications of CV and ML (Thesis). I received the Master of Mathematics with Distinction in 2014 and Bachelor of Arts in Mathematics as a Wrangler in 2013, both at University of Cambridge.</div>
+<!--  -->
+<a class="read-more" href="/CV_JIHYEONLEE.pdf" title="Case studies">Full resume →</a>
+<div>
+        I am in to,
+        <ul>
+                <li >Music</li>
+                <li >Classical music</li>
+                <li >Travel</li>
+                <li >Health</li>
+                <li >Book</li>
+                <li >Coffee</li>
+                <li >Love</li>
+          </ul>
+    
+    </div>
+<h2 style='border-top: 0px; padding-top: 0rem;'>Research</h2>
 
-<div class="home-news-listing">
-<h2>News</h2>
+<div>
+My research interest are mainly on human-centered data science. 
+I am particularly interested in applying computational techniques to understand ~~. 
 
-<h3><a class="post-link" href="/2018/02/02/blog.html" title="Another title">Another title</a></h3>
-<p><span class="inline-post-date">Feb 2, 2018—</span>Salutantibus vitae elit libero, a pharetra augue. Fabio vel iudice vincam, sunt in culpa qui officia. Etiam habebis sem dicantur magna mollis euismod.</p>
+I have tried to push certain fronts in ML research to make models truly useful and deployable in real life. 
+They can be grouped into a few keywords.
 
-<h3><a class="post-link" href="/2018/01/01/blog.html" title="My title">My title</a></h3>
-<p><span class="inline-post-date">Jan 1, 2018—</span>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</p>
+Robustness. Changes in the input distribution shall not disrupt the model's predictive power. Ideally, a model should be robust against the shifts in input domain (e.g. natural and adversarial perturbations) and confounders (e.g. fairness).
 
+
+Weak Supervision. Human supervision is often a bottleneck for training a model on a new task. I have sought cost-effective surrogates for the annotations and corresponding training methodologies.
+
+Uncertainty. A model should know when it is going to get it wrong. This allows the users and downstream systems to make sensible and safe decisions based on the estimated confidence levels.
+Evaluation. Correct evaluation is undoubtably important in research and industrial applications, yet it is surprisingly difficult. I have cleaned up benchmarks and evaluation protocols in a few domains.
+Multimodal. Some of the methodologies I have been involved in are designed for large-scale ML. They typically require minimal changes to the original ML system but bring consistent gains across the board.
 </div>
-
-<a class="read-more" href="/news/" title="News">More news →</a>
-
+<br>    
+<div style="overflow: auto">
+    <div style="display: flex">
+        <div style="flex: 20%">
+            <img src="theme-assets/profile.png" width="100px" alt="" class="figure-img img-fluid" style="margin:10px;">
+        </div>
+        <div style="flex: 80%; align-self: center">
+            <p class="lead">
+            <span class="font-weight-bold">Learning De-biased Representations with Biased Representations</span><br>
+            <span class="font-weight-bold">Hyojin Bahng</span>, Sanghyuk Chun, Sangdoo Yun, Jaegul Choo, Seong Joon Oh<br>
+            <i>ICML 2020</i><br>
+            <a href="https://arxiv.org/abs/1910.02806" class="read-more-button">Robustness</a>
+            <a href="https://arxiv.org/abs/1910.02806" style="font-size: 0.8rem">[Paper]</a> 
+            <a href="https://github.com/clovaai/rebias" style="font-size: 0.8rem">[Code]</a> 
+            </p>
+        </div>
+    </div>
+    <div style="display: flex">
+        <div style="flex: 20%;">
+            <img src="theme-assets/profile.png" width="100px" alt="" class="figure-img img-fluid" style="margin:10px;">
+        </div>
+        <div style="flex: 80%; align-self: center">
+            <p class="lead">
+            <span class="font-weight-bold">Exploring Unlabeled Faces for Novel Attribute Discovery</span><br>
+            <span class="font-weight-bold">Hyojin Bahng</span>, Sunghyo Chung, Seungjoo Yoo, Jaegul Choo<br>
+            <i>CVPR 2020</i><br>
+            <a href="https://arxiv.org/abs/1912.03085" style="font-size: 0.8rem">[Paper]</a>
+            </p>
+        </div>
+    </div>
+    <!-- <a class="read-more" href="/project/" title="Case studies">Project details →</a> -->
 </div>
 </section>
 
 
-<section class="home-case-listing cf">
-<div class="wrapper">
-
-<h2>Latest case study</h2>
-
-
-
-<h3 class="cf"><a title="Case study title Case study details" href="/case-studies/one/">Case study title</a></h3>
-
-<div class="grid">
-  <div class="grid__col grid__col--1-of-5 grid__col--m-1-of-3  grid__col--s-1-of-1">
-    <img src="/theme-assets/case-studies/case-thumb.jpg" alt="Case study title" class="listing-thumb"/>
-  </div>
-  <div class="grid__col grid__col--4-of-5 grid__col--m-2-of-3   grid__col--s-1-of-1">
-    <p>Salutantibus vitae elit libero, a pharetra augue. Ullamco laboris nisi ut aliquid ex ea commodi consequat. Idque Caesaris facere voluntate liceret sese habere.</p>
-  </div>
-
-</div>
-
-
-<a class="read-more" href="/case-studies/" title="Case studies">More case studies →</a>
 
 </div><!-- end wrapper -->
 </section>
 
-<section class="cf">
-<div class="wrapper">
-<h2>Twitter</h2>
-<div id="tweetWrap" class="tweetwrap"></div>
-<script type="text/javascript" src="/js/mytweets.js"></script>
-</div>
-</section>
-
 </div>
 
-<footer class="site-footer cf">
+<footer>
 <div class="wrapper">
-
-<ul>
-<li>Email: <a href="mailto:regmtait@gmail.com" title="Email us">regmtait@gmail.com</a> • <a href="https://github.com/regmtait/Toasty-Jekyll" title="Download from GitHub">Download</a> site source</li>
-</ul>
-
+    <nav class="site-nav">
+    </nav>
+        <ul>
+            <li style="font-size:12px">
+                © This page is adapted from <a href="https://github.com/regmtait/Toasty-Jekyll">Tait's repo.</a>
+            </li>
+        </ul>        
 </div>
 </footer>
 

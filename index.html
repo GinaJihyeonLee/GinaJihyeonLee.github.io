@@ -5,58 +5,98 @@ description: A White label website
 keywords: jekyll, reg tait
 nav-class: home
 ---
-
 <div class="wrapper">
 <h1>{{ site.title }}</h1>
-<p>{{ site.description }}</p>
+<p >Passionate AI researcher and sensible person<br>jihyeonlee at kaist dot ac dot kr</p>
+<div>
+    <img src="./theme-assets/profile.png" width="180px"
+            alt="profile image">
 </div>
+<div>
+<p>Welcome to my website. Here, I mainly share my research interests including CV and projects. Enjoy to read more about me and please feel free to contact further!</p>
+<p>Codes are available in <a href="https://github.com/GinaJihyeonLee" target="_blank" rel="noopener noreferrer">Github</a>. If you want to know more about my personality and life style, please visit to my <a href="https://www.instagram.com/ginabeloved/" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+<!-- and additional technology writings are recorded on <a href="/news/">Tistory</a>. If you want to know more about my personality and life style, please visit to my <a href="https://www.instagram.com/ginabeloved/">Instagram</a>.</p>
+<a href="https://www.notion.so/ginalee/Personal-Page-c18aca076bf64354a7642b5c4a7d9418">Notion</a> page, <a href="/news/">Twitter</a>, and  -->
+</div>
+</div>    
 
 <section class="cf">
 <div class="wrapper">
+<h2>About Me</h2>
+<div>I am a MS student in the DAVIAN Lab at KAIST AI advised by Jaegul Choo.
+    I received the Bachelor of Science in Biz&Tech Management and Industrial Engineering in 2020, at Korea Advanced Institute of Science and Technology.
+<br><br>I am particularly interested in applying ML/DL technologies in the real life services. 
+    In other words, research areas necessary for deploying AI models and where people and AI are in contact with each other make me enthusiastic.
+    <!-- 나는 ai 기술을 활용해 우리 삶을 더 윤택하게 하는 서비스를 만드는데 관심이 많다. 즉 사람과 ai가 닿아있는 영역, ai 모델이 상용화 되는데 필요한 연구 등에 관심이 있음. -->
+<br><br>I have conducted a study to consider the personal style on machine-translated output.
+    Recently, I am interested in learning de-biased representation in natural language processing and computer vision fields.
+    More broadly, my research interests are in the areas of <code style="padding: 2px 4px; color: #df2854; background-color: #EFEBEF; border-radius: 4px; font-size: 95%">robustness, fairness, multimodal learning, and various natural language processing topics</code>.</div>
 
-<div class="home-news-listing">
-<h2>News</h2>
-{% for post in site.posts limit:3 %}
+        <!-- {% for post in site.posts limit:3 %}
 <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></h3>
 <p><span class="inline-post-date">{{ post.date | date: "%b %-d, %Y" }}—</span>{{ post.excerpt }}</p>
-{% endfor %}
+{% endfor %} -->
+<br>
+<div>
+        Beside the research, I am into <code style="padding: 2px 4px; font-size: 95%">music, classical music, travel, health, book, coffee and love</code>.
+        <!-- <ul>
+                <li >Music</li>
+                <li >Classical music</li>
+                <li >Travel</li>
+                <li >Health</li>
+                <li >Book</li>
+                <li >Coffee</li>
+                <li >Love</li>
+          </ul> -->
+    
 </div>
+<a class="read-more" href="/CV_JIHYEONLEE.pdf" target="_blank" rel="noopener noreferrer" title="Case studies">Full resume →</a>
 
-<a class="read-more" href="/news/" title="News">More news →</a>
 
+<h2>Publications </h2>
+<!-- <div> -->
+<!-- Robustness. Changes in the input distribution shall not disrupt the model's predictive power. Ideally, a model should be robust against the shifts in input domain (e.g. natural and adversarial perturbations) and confounders (e.g. fairness).
+Weak Supervision. Human supervision is often a bottleneck for training a model on a new task. I have sought cost-effective surrogates for the annotations and corresponding training methodologies.
+Uncertainty. A model should know when it is going to get it wrong. This allows the users and downstream systems to make sensible and safe decisions based on the estimated confidence levels.
+Evaluation. Correct evaluation is undoubtably important in research and industrial applications, yet it is surprisingly difficult. I have cleaned up benchmarks and evaluation protocols in a few domains.
+Multimodal. Some of the methodologies I have been involved in are designed for large-scale ML. They typically require minimal changes to the original ML system but bring consistent gains across the board. -->
+<!-- </div>
+<br>     -->
+<div style="overflow: auto">
+    <div style="display: flex">
+        <div style="flex: 20%">
+            <img src="theme-assets/pepal.png" width="100px" alt="" class="figure-img img-fluid" style="margin:10px;">
+        </div>
+        <div style="flex: 80%; align-self: center">
+            <p class="lead">
+            <span class="font-weight-bold">PePAL: Personalized Post-Editing via Cluster-Aware Adversarial Learning</span><br>
+            <span class="font-weight-bold">Jihyeon Lee</span>, Taehee Kim, Yunwon Tae, Chunbok Park, Jaegul Choo<br>
+            <i>(Under Review)</i><br>
+            <!-- <a href="https://arxiv.org/abs/1910.02806" class="read-more-button">Robustness</a> -->
+            <a href="" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem">[Paper]</a> 
+            <a href="" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem">[Code]</a> 
+            </p>
+        </div>
+    </div>
+    <div style="display: flex">
+        <div style="flex: 20%;">
+            <img src="theme-assets/ssl_debias.png" width="100px" alt="" class="figure-img img-fluid" style="margin:10px;">
+        </div>
+        <div style="flex: 80%; align-self: center">
+            <p class="lead">
+            <span class="font-weight-bold">Exploring Self-supervised Learning for De-biased Representation</span><br>
+            <span class="font-weight-bold">Jihyeon Lee</span>, Eungyup Kim, Jaegul Choo<br>
+            <i>(Working Paper)</i><br>
+            <a href="" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem">[Paper]</a>
+            <a href="" target="_blank" rel="noopener noreferrer" style="font-size: 0.8rem">[Code]</a> 
+            </p>
+        </div>
+    </div>
+    <!-- <a class="read-more" href="/project/" title="Case studies">Project details →</a> -->
 </div>
 </section>
 
 
-<section class="home-case-listing cf">
-<div class="wrapper">
-
-<h2>Latest case study</h2>
-
-{% assign items = site.case | sort: 'date' %}
-{% for case in site.case limit:1 %}
-<h3 class="cf"><a title="{{ case.title }} Case study details" href="{{ case.url }}">{{ case.title }}</a></h3>
-
-<div class="grid">
-  <div class="grid__col grid__col--1-of-5 grid__col--m-1-of-3  grid__col--s-1-of-1">
-    {% if case.thumb %}<img src="/{{ site.theme-path }}/case-studies/{{ case.thumb }}" alt="{{ case.title }}" class="listing-thumb"/>{% endif %}
-  </div>
-  <div class="grid__col grid__col--4-of-5 grid__col--m-2-of-3   grid__col--s-1-of-1">
-    <p>{{ case.summary }}</p>
-  </div>
-
-</div>
-{% endfor %}
-
-<a class="read-more" href="/case-studies/" title="Case studies">More case studies →</a>
 
 </div><!-- end wrapper -->
-</section>
-
-<section class="cf">
-<div class="wrapper">
-<h2>Twitter</h2>
-<div id="tweetWrap" class="tweetwrap"></div>
-<script type="text/javascript" src="/js/mytweets.js"></script>
-</div>
 </section>

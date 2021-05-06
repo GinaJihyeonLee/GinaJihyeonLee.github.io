@@ -1,8 +1,9 @@
 # Site settings
-title: Toasty Jekyll
+title: Gina Jihyeon Lee
 email: gina3833@kaist.ac.kr
 description: > # this means to ignore newlines until "baseurl:"
-  A super simple white label website built with Jekyll and using Dan Eden's Toast grid layout.
+  Passionate AI researcher and sensible women.
+description1: Welcome to my website. I mainly share my research outputs including CV and projects. To know more about my real life, Please feel free to read more about me.
 baseurl: ""
 url: "https://ginajihyeonlee.github.io/"
 theme-path: theme-assets # path to header assets etc
@@ -21,4 +22,3 @@ collections:
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-tactile
