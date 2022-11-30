@@ -1,0 +1,16 @@
+current directory: /Users/jihyeonlee/Sites/resume-template/_vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/jihyeonlee/.rbenv/versions/2.7.7/bin/ruby -I /Users/jihyeonlee/.rbenv/versions/2.7.7/lib/ruby/2.7.0 -r ./siteconf20221130-3725-bbxgr9.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jihyeonlee/Sites/resume-template/_vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/jihyeonlee/Sites/resume-template/_vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/jihyeonlee/Sites/resume-template/_vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 ruby_http_parser.bundle ./.gem.20221130-3725-w5cni8

@@ -1,0 +1,33 @@
+// Variables
+// ---------------------------------------/
+
+$container-width: 980px !default;
+$grid-gutter:     10px !default;
+
+// Colors
+$white:             #fff;
+$black:             #333;
+$theme1:            #df2854;
+$color-main:        #363636;
+$color-cont:        #363636;
+$color-grey:        #767c87;
+$color-grey-light:  #bbb;
+$color-pale-bg:     #efefef;
+
+// Styles
+$text_color:        $color-main;
+$border-on-light: darken($color-pale-bg, 5%);
+$color-text-lighter: $color-grey;
+
+// Font stack
+$body-font: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+// The base body size
+$body-font-size: 13px !default;
+
+// Monospace font stack
+$mono-font: Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+
+// paths
+//Usage: background-image: url(#{$themepath}/blockquote.png);
+$themepath: '/theme-assets';

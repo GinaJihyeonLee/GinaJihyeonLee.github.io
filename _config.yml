@@ -1,24 +1,52 @@
 # Site settings
-title: Gina Jihyeon Lee
-email: gina3833@kaist.ac.kr
-description: > # this means to ignore newlines until "baseurl:"
-  Passionate AI researcher and sensible women.
-description1: Welcome to my website. I mainly share my research outputs including CV and projects. To know more about my real life, Please feel free to read more about me.
-baseurl: ""
+title: Gina Lee's personal page
+email: gina3833@gmail.com
 url: "https://ginajihyeonlee.github.io/"
-theme-path: theme-assets # path to header assets etc
-map-api-key: AIzaSyB3U7uwIvCyq01orxppAIC1v73y-FBGygY
+
+# Build settings
+markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
 
-collections:
-  case:
-    output: true
-    permalink: /case-studies/:path/
-  resource:
-    output: true
-    permalink: /resources/:path/
+# Resume settings
+resume_avatar:                  "true"
+resume_name:                    "Gina Jihyeon Lee"
+resume_title:                   "AI Research Scientist"
+resume_email:                   "gina.ai at kakaobrain dot com"
 
-# Build settings
-markdown: kramdown
+# used for the contact button in _layouts/resume.html
+resume_contact_email:           "lisasimpson@youremailaddress.com"
+
+# the next two items are used for schema itemprops in _layouts/resume.html
+resume_contact_telephone:       "555-7334"
+resume_contact_address:         "742 Evergreen Terrace, Springfield"
+
+resume_header_contact_info:     "742 Evergreen Terrace, Springfield • 555-7334 • lisasimpson@youremailaddress.com"
+display_header_contact_info:    "false"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_about_me:      true
+resume_section_latest_news:   true
+resume_section_publications:  true
+
+# Resume social links
+# uncomment the options you wish to display, and add your own URL
+resume_social_links:
+  resume_github_url:            "https://github.com/jglovier/resume-template"
+  resume_twitter_url:           "http://twitter.com/jglovier"
+  resume_dribbble_url:          "https://dribbble.com/jag"
+  # resume_facebook_url:          "insert Facebook URL here"
+  resume_linkedin_url:          "https://www.linkedin.com/in/joelglovier"
+  # resume_instagram_url:         "insert your Instagram URL here"
+  resume_website_url:           "http://joelglovier.com"
+  resume_medium_url:            "https://medium.com/@jglovier"
+resume_print_social_links:      true
+
+# Design settings
+resume_theme:                   default
+
+# Note: when editing locally, remember to restart
+# your Jekyll server when you edit this file. Changes
+# to _config.yml are only recognized when the server starts

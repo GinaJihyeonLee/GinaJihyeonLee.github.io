@@ -1,173 +1,240 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="@regmtait">
-  <link rel=icon href="/theme-assets/favicon.svg" sizes="any" type="image/svg+xml">
-  <title>Gina Jihyeon Lee</title>
-  <meta name="description" content="A White label website">
-  <meta name="keywords" content="jekyll, reg tait">
 
-  <link rel="stylesheet" href="/css/style.css">
+  <title>Gina Lee's personal page</title>
+
+  <!-- Google font typography settings - defined in _config.yml -->
+  
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+  
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
 
+  <meta name="description" content="">
 
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3U7uwIvCyq01orxppAIC1v73y-FBGygY&callback=initMap"
-    async defer></script>
-
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('google-map'), {
-          center: {lat: 53.7530398, lng: -0.3682561},
-          zoom: 17,
-        });
-
-        var pointer = "/theme-assets/map-pointer.svg";
-
-        var marker = new google.maps.Marker({
-          position: map.getCenter(),
-          icon: pointer,
-          map: map
-        });
-
-      }
-    </script>
-
-
-
+  <link rel="stylesheet" href="css/main.css">
   <link rel="canonical" href="http://localhost:4000/">
-  <link rel="alternate" type="application/rss+xml" title="Gina Jihyeon Lee" href="http://localhost:4000/feed.xml">
-
+  <link rel="icon" type="image/x-icon" href="theme-assets/favicon.svg" />
 </head>
 
-<body class="home">
 
-<header class="site-header cf">
+  <body class="theme-default">
 
-<div class="wrapper">
-	<nav class="site-nav">
-		<a class="logo" href="/" title="Gina Jihyeon Lee home page">
-		<img class="nav-logo" src="/theme-assets/logo.svg" title="Gina Jihyeon Lee logo" /></a>
-		<ul>
-  			<li  class="news"><a title="About" class="page-link" href="/">About</a></li>
-  			<li  class="case-studies"><a title="Resume" class="page-link" href="/GinaLee_CV_2107_Updated.pdf">Resume</a></li>
-  			<!-- <li  class="resources"><a title="Project" class="page-link" href="/project/">Project</a></li> -->
-		</ul>
-	</nav>
-</div>
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="telephone" content="555-7334"/>
+      <meta itemprop="address" content="742 Evergreen Terrace, Springfield"/>
 
-</header>
+      <header class="page-header">
 
-<div class="page-content">
- <div class="wrapper">
-<h1>Gina Jihyeon Lee</h1>
-<p >Passionate AI researcher and sensible person<br>jihyeonlee at kaist dot ac dot kr</p>
-<div>
-    <img src="./theme-assets/profile.png" width="180px"
-            alt="profile image">
-</div>
-<div>
-<p>Welcome to my website. Here, I mainly share my research interests including CV and projects. Enjoy to read more about me and please feel free to contact further!</p>
-<p>Codes are available in <a href="https://github.com/GinaJihyeonLee">Github</a> and additional technology writings are recorded on <a href="/news/">Tistory</a>. If you want to know more about my personality and life style, please visit to my <a href="https://www.notion.so/ginalee/Personal-Page-c18aca076bf64354a7642b5c4a7d9418">Notion</a> page, <a href="/news/">Twitter</a>, and <a href="https://www.instagram.com/ginabeloved/">Instagram</a>.</p>
-</div>
-</div>    
+        <!-- You can turn off the avatar in _config.yml by setting to false -->
+        
+        <img src="theme-assets/profile_2206.JPG" alt="my photo" class="avatar no-print" itemprop="image">
+        
 
-<section class="cf">
-<div class="wrapper">
-<h2>About Me</h2>
-<div>I am a research scientist at NAVER AI Lab, working on the challenges of deploying machine learning models in the real world. I am interested in training robust, probabilistic, and weakly-supervised models in pragmatic settings.
-I received my PhD in computer vision and machine learning at Max-Planck Institute for Informatics in 2018, under the supervision of Bernt Schiele and Mario Fritz, with a focus on the privacy and security implications of CV and ML (Thesis). I received the Master of Mathematics with Distinction in 2014 and Bachelor of Arts in Mathematics as a Wrangler in 2013, both at University of Cambridge.</div>
-<!--  -->
-<a class="read-more" href="/GinaLee_CV_2107_Updated.pdf" title="Case studies">Full resume →</a>
-<div>
-        I am in to,
-        <ul>
-                <li >Music</li>
-                <li >Classical music</li>
-                <li >Travel</li>
-                <li >Health</li>
-                <li >Book</li>
-                <li >Coffee</li>
-                <li >Love</li>
-          </ul>
-    
+        <!-- Your name is defined in the _config.yml file -->
+        <h1 class="header-name" itemprop="name">Gina Jihyeon Lee</h1>
+        <h3 class="header-title-email">AI Research Scientist<br>gina.ai at kakaobrain dot com</h3>
+        <p class="header-link"><a href="theme-assets/GinaLee_CV_220615_Updated.pdf" target="_blank" rel="noopener noreferrer"> [Resume] </a><a href="https://scholar.google.com/citations?user=lArnR6gAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer"> [Google Scholar] </a><a href="https://github.com/GinaJihyeonLee" target="_blank" rel="noopener noreferrer"> [Github] </a><a href="https://www.linkedin.com/in/ginajihyeonlee" target="_blank" rel="noopener noreferrer"> [Linkedin] </a></p>        
+
+        <!-- To display contact info here, change `display_header_contact_info` value in _config.yml to true -->
+        
+
+    </header>
+
+      
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>About Me</h2>
+        </header>
+
+        <div class="executive-summary" itemprop="description">
+            <!-- <h2>About Me</h2> -->
+            <div>I am an AI Researcher of <a style="text-decoration:underline; color: #000000;" href="https://www.kakaobrain.com/" target="_blank" rel="noopener noreferrer">Kakaobrain</a>, working in large-scale language model team. I received MS from DAVIAN Lab at <a style="text-decoration:underline; color: #000000;" href="https://gsai.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">KAIST Graduate School of Artificial Intelligence</a> advised by <a style="text-decoration:underline; color: #000000" href="https://sites.google.com/site/jaegulchoo/" target="_blank" rel="noopener noreferrer">Jaegul Choo</a>.
+                Before that, I obtained the Bachelor of Science in Biz&Tech Management and Industrial Engineering in 2020, at KAIST.
+            <br><br>
+            My research aims to improve the large-scale language models. I focus on two main topics; controllability of the generation to solve the toxicity problem and curation of large-scale dataset to effectively pre-train the language models.  
+            Formerly, I worked on projects that aim to learn de-biased representation, consider the personal style on machine translation, and solve efficient multimodal QA.
+            More broadly, my research interests lies in the areas of <code style="padding: 2px 4px; color: #df2854; background-color: #EFEBEF; border-radius: 4px; font-size: 95%">controllable language generation, robustness and fairness of LMs, multi-modal learning, and various natural language processing topics</code>.</div>
+            <br>                    
+            <div>
+                <p>Detailed resume can be found in the following link.</p>
+                <a class="read-more" href="theme-assets/GinaLee_CV_220615_Updated.pdf" target="_blank" rel="noopener noreferrer" title="Case studies">Full resume →</a>
+            </div>            
+        </div>
+      </section>
+      <!-- end Experience -->
+      
+
+
+      
+      <!-- begin Education -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Latest News</h2>
+        </header>
+
+        <div>
+            <code style="padding: 2px 4px; font-weight: bold;">Aug 2022&nbsp;</code>&emsp; &#127942; Paper accepted to WACV 2023<br>    
+            <code style="padding: 2px 4px; font-weight: bold;">Feb 2022&nbsp;</code>&emsp; &#127891; Officially a Master in Artificial Intelligence<br>
+            <code style="padding: 2px 4px; font-weight: bold;">Oct 2021&nbsp;</code>&emsp; &#128640; Working at Kakaobrain as an AI Research Scientist<br>
+            <code style="padding: 2px 4px; font-weight: bold;">Oct 2021&nbsp;</code>&emsp; &#127942; Paper accepted to NeurIPS 2021 as an Oral presentation<br>
+            <code style="padding: 2px 4px; font-weight: bold;">July 2021</code>&emsp; &#127942; Paper accepted to ICCV 2021<br>    
+            <code style="padding: 2px 4px; font-weight: bold;">July 2021</code>&emsp; &#128205; Starting my internship at Kakaobrin<br>
+            <code style="padding: 2px 4px; font-weight: bold;">Aug 2020&nbsp;</code>&emsp; &#128205; Working at Naver Papago as a Collaborative Researcher<br>
+            <code style="padding: 2px 4px; font-weight: bold;">Aug 2020&nbsp;</code>&emsp; &#127891; Graduated cum laude with a Bachelor in Industrial Engineering & Business Management<br>
+            <code style="padding: 2px 4px; font-weight: bold;">Aug 2020&nbsp;</code>&emsp; &#128640; Working at Classum as a Data Analyst/Marketer<br>
+        </div>
+      </section>
+      <!-- end Education -->
+      
+
+
+      
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Publications</h2>
+        </header>
+
+        <div style="overflow: auto">
+            <div style="display: flex">
+                <div style="flex: 20%;">
+                    <img src="theme-assets/debias.png" width="100px" alt="" style="margin:10px; margin-top:20px;">
+                </div>
+                <div style="flex: 80%; align-self: center">
+                    <p class="lead">
+                    <span>BiaSwap: Removing Dataset Bias with Bias-Tailored Swapping Augmentation</span><br>
+                    <span style="font-size: 14px;">Eungyeup Kim*,<span style="font-weight: 700;">Jihyeon Lee*</span>, Jaegul Choo</span><br>
+                    <i style="font-size: 14px;">International Conference on Computer Vision (ICCV), 2021, Accepted</i><br>
+                    <a href="https://arxiv.org/abs/2108.10008" target="_blank" rel="noopener noreferrer" style="font-size: 14px">[Paper]</a>
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex">
+                <div style="flex: 20%">
+                    <img src="theme-assets/debias2.png" width="100px" alt="" style="margin:10px; margin-top:20px;">
+                </div>
+                <div style="flex: 80%; align-self: center">
+                    <p class="lead">
+                    <span>Learning Debiased Representation via Disentangled Feature Augmentation</span><br>
+                    <span style="font-size: 14px;">Jungsoo Lee*, Eungyeup Kim*, Juyoung Lee, <span style="font-weight: 700;">Jihyeon Lee</span>, Jaegul Choo</span><br>
+                    <i style="font-size: 14px;">Conference on Neural Information Processing Systems (NeurIPS), 2021, Accepted as Oral Presentation (< 1% acceptance rate)</i><br>
+                    <!-- <a href="https://arxiv.org/abs/1910.02806" class="read-more-button">Robustness</a> -->
+                    <a href="https://arxiv.org/abs/2107.01372" target="_blank" rel="noopener noreferrer" style="font-size: 14px">[Paper]</a>
+                    <a href="https://github.com/kakaoenterprise/Learning-Debiased-Disentangled" target="_blank" rel="noopener noreferrer" style="font-size: 14px">[Code]</a>
+                    <i style="color: #df2854; font-size: 14px;">Oral presentation</i>
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex">
+                <div style="flex: 20%">
+                    <img src="theme-assets/dsr.png" width="100px" alt="" style="margin:10px; margin-top:20px;">
+                </div>
+                <div style="flex: 80%; align-self: center">
+                    <p class="lead">
+                    <span>Dense but Efficient VideoQA for Intricate Compositional Reasoning</span><br>
+                    <span style="font-size: 14px;"><span style="font-weight: 700;">Jihyeon Lee*</span>, Wooyoung Kang*, Eunsol Kim</span><br>
+                    <i style="font-size: 14px;">Winter Conference on Applications of Computer Vision (WACV), 2023, Accepted</i><br>
+                    <a href="https://arxiv.org/abs/2210.10300" target="_blank" rel="noopener noreferrer" style="font-size: 14px">[Paper]</a>
+                    <!-- <a href="https://arxiv.org/abs/1910.02806" class="read-more-button">Robustness</a> -->
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex">
+                <div style="flex: 20%">
+                    <img src="theme-assets/pepal.png" width="100px" alt="" style="margin:10px; margin-top:20px;">
+                </div>
+                <div style="flex: 80%; align-self: center">
+                    <p class="lead">
+                    <span>PePe: Personalized Post-editing Model utilizing User-generated Post-edits</span><br>
+                    <span style="font-size: 14px;"><span style="font-weight: 700;">Jihyeon Lee*</span>, Taehee Kim*, Yunwon Tae*, Chunbok Park, Jaegul Choo</span><br>
+                    <i style="font-size: 14px;">Arxiv Preprint</i><br>
+                    <a href="https://arxiv.org/abs/2209.10139" target="_blank" rel="noopener noreferrer" style="font-size: 14px">[Paper]</a>
+                    <!-- <a href="https://arxiv.org/abs/1910.02806" class="read-more-button">Robustness</a> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+      </section>
+      <!-- end Projects -->
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <!-- begin Print Social Links -->
+      <section class="content-section print-only">
+
+        <header class="section-header">
+          <h2>Social Links</h2>
+        </header>
+
+        <div class="resume-item">
+        <!-- and guess where these are defined? Yup, you guessed it: the _config.yml file -->
+
+<ul>
+
+  <!-- GitHub link -->
+  
+  <li><strong>Github</strong>: https://github.com/jglovier/resume-template</li>
+  
+
+  <!-- Twitter link -->
+  
+  <li><strong>Twitter</strong>: http://twitter.com/jglovier</li>
+  
+
+  <!-- Dribbble link -->
+  
+  <li><strong>Dribbble</strong>: https://dribbble.com/jag</li>
+  
+
+  <!-- Facebook link -->
+  
+
+  <!-- LinkedIn link -->
+  
+  <li><strong>LinkedIn</strong>: https://www.linkedin.com/in/joelglovier</li>
+  
+
+  <!-- Instagram link -->
+  
+
+  <!-- Website link -->
+  
+  <li><strong>Website</strong>: http://joelglovier.com</li>
+  
+
+</ul>
+
+
+        </div>
+
+      </section>
+      <!-- end Print Social Links -->
+      
+
+      <footer class="page-footer">
+        <p class="footer-line">This page is modified from <a href="https://github.com/jglovier/resume-template">@jglovier's repo</a>.</p>
+      </footer>
+
     </div>
-<h2 style='border-top: 0px; padding-top: 0rem;'>Research</h2>
 
-<div>
-My research interest are mainly on human-centered data science. 
-I am particularly interested in applying computational techniques to understand ~~. 
-
-I have tried to push certain fronts in ML research to make models truly useful and deployable in real life. 
-They can be grouped into a few keywords.
-
-Robustness. Changes in the input distribution shall not disrupt the model's predictive power. Ideally, a model should be robust against the shifts in input domain (e.g. natural and adversarial perturbations) and confounders (e.g. fairness).
-
-
-Weak Supervision. Human supervision is often a bottleneck for training a model on a new task. I have sought cost-effective surrogates for the annotations and corresponding training methodologies.
-
-Uncertainty. A model should know when it is going to get it wrong. This allows the users and downstream systems to make sensible and safe decisions based on the estimated confidence levels.
-Evaluation. Correct evaluation is undoubtably important in research and industrial applications, yet it is surprisingly difficult. I have cleaned up benchmarks and evaluation protocols in a few domains.
-Multimodal. Some of the methodologies I have been involved in are designed for large-scale ML. They typically require minimal changes to the original ML system but bring consistent gains across the board.
-</div>
-<br>    
-<div style="overflow: auto">
-    <div style="display: flex">
-        <div style="flex: 20%">
-            <img src="theme-assets/profile.png" width="100px" alt="" class="figure-img img-fluid" style="margin:10px;">
-        </div>
-        <div style="flex: 80%; align-self: center">
-            <p class="lead">
-            <span class="font-weight-bold">Learning De-biased Representations with Biased Representations</span><br>
-            <span class="font-weight-bold">Hyojin Bahng</span>, Sanghyuk Chun, Sangdoo Yun, Jaegul Choo, Seong Joon Oh<br>
-            <i>ICML 2020</i><br>
-            <a href="https://arxiv.org/abs/1910.02806" class="read-more-button">Robustness</a>
-            <a href="https://arxiv.org/abs/1910.02806" style="font-size: 0.8rem">[Paper]</a> 
-            <a href="https://github.com/clovaai/rebias" style="font-size: 0.8rem">[Code]</a> 
-            </p>
-        </div>
-    </div>
-    <div style="display: flex">
-        <div style="flex: 20%;">
-            <img src="theme-assets/profile.png" width="100px" alt="" class="figure-img img-fluid" style="margin:10px;">
-        </div>
-        <div style="flex: 80%; align-self: center">
-            <p class="lead">
-            <span class="font-weight-bold">Exploring Unlabeled Faces for Novel Attribute Discovery</span><br>
-            <span class="font-weight-bold">Hyojin Bahng</span>, Sunghyo Chung, Seungjoo Yoo, Jaegul Choo<br>
-            <i>CVPR 2020</i><br>
-            <a href="https://arxiv.org/abs/1912.03085" style="font-size: 0.8rem">[Paper]</a>
-            </p>
-        </div>
-    </div>
-    <!-- <a class="read-more" href="/project/" title="Case studies">Project details →</a> -->
-</div>
-</section>
-
-
-
-</div><!-- end wrapper -->
-</section>
-
-</div>
-
-<footer>
-<div class="wrapper">
-    <nav class="site-nav">
-    </nav>
-        <ul>
-            <li style="font-size:12px">
-                © This page is adapted from <a href="https://github.com/regmtait/Toasty-Jekyll">Tait's repo.</a>
-            </li>
-        </ul>        
-</div>
-</footer>
-
-</body>
+  </body>
 
 </html>
